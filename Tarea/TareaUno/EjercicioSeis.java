@@ -9,6 +9,7 @@ public class EjercicioSeis{
 				indiceAux = indiceAux - 1; // Se modifica el índice
 			}
 		arr[indiceAux+1] = actual;
+		//System.out.println(i+": "+Arrays.toString(arr));
 		}
 		return arr;
 		}
