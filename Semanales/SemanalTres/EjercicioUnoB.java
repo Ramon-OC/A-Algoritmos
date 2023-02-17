@@ -4,9 +4,13 @@ public class EjercicioUnoB {
 
     public static void ejercicioUnoB(int[] arr){
         int duplicado = 0, faltante = 0;
+        int sumaCompleta = 0, sumaIncompleta = 0;
 
         for(int i = 0; i < arr.length; i++){
+            sumaCompleta += i;
             int valor = arr[i]<0 ? -arr[i]: arr[i];
+
+            sumaIncompleta += valor;
 
             int indice = valor ;
 
@@ -16,7 +20,12 @@ public class EjercicioUnoB {
                 duplicado = indice;
             }
         }
+        
+        faltante = sumaCompleta - (sumaIncompleta - duplicado);
         System.out.println("El número duplicado es: "+duplicado);
+        System.out.println("El número faltante es: "+faltante);
+
+
     }
 
    
